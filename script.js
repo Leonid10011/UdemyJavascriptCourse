@@ -18,3 +18,9 @@ addForm.addEventListener("submit", e => {
         generateTemplate(todo)
     console.log(todo)
 })
+
+// delete todos
+ulList.addEventListener("click", e => {
+    if(e.target.classList.contains("delete"))
+        e.target.parentElement.remove();
+});
