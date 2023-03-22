@@ -12,32 +12,21 @@
 <body>
     <div class="container">
 
-        <div class="text-center text-light my4">
+        <header class="text-center text-light my-4">
             <h1 class="mb-4">Todo List</h1>
-            <form action="" class="search">
-                <input type="text" class="form-control m-auto" type="text" name="search" placeholder="search">
+            <form class="search">
+              <input class="form-control m-auto" type="text" name="search" placeholder="search todos" />
             </form>
-        </div>
-
-        <ul class="list-group todos mx-auto text-red">
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span>play mariokart</span>
-                <i class="far fa-trash-alt delete"></i>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span>play mariokart</span>
-                <i class="far fa-trash-alt delete"></i>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span>play mariokart</span>
-                <i class="far fa-trash-alt delete"></i>
-            </li>
-        </ul>
-
-        <form action="" class="add text-center my-4">
-            <label for="" class="text-light">Add a new todo ...</label>
-            <input type="text" class="form-control m-auto">
-        </form>
+          </header>
+      
+          <ul class="list-group todos mx-auto text-light">
+            
+          </ul>
+      
+          <form class="add text-center my-4">
+            <label class="text-light">Add a new todo...</label>
+            <input class="form-control m-auto" type="text" name="add" />
+          </form>
     </div> 
     <script src="script.js"></script>
 </body>
