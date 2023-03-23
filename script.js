@@ -42,3 +42,24 @@ console.log("Past years since 2019", years);
 // converting timestamp into date object
 const timestamp = 1679595942894;
 console.log(new Date(timestamp));
+
+// html clock
+const clock = document.querySelector(".clock");
+
+const tick = () => {
+    const now = new Date();
+
+    const h = now.getHours();
+    const m = now.getMinutes();
+    const s = now.getSeconds();
+
+    const html = `
+        <span>${h}</span>:
+        <span>${m}</span>:
+        <span>${s}</span>
+    `;
+
+    clock.innerHTML = html;
+}
+
+setInterval(tick, 1000);
